@@ -1,11 +1,11 @@
 local M = {}
 
-local create_popup = require("is_it_friday.popup")
-local create_menu = require("is_it_friday.menu")
-local create_layout = require("is_it_friday.layout")
-local set_content = require("is_it_friday.set_content")
+local create_popup = require("popup")
+local create_menu = require("menu")
+local create_layout = require("layout")
+local set_content = require("set_content")
 
-M.is_it_friday = function()
+M.is_it_friday_yet = function()
 	local current_day = os.date("*t").wday
 
 	local popup = create_popup()
